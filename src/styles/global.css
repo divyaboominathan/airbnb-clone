@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* font-family: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #222222;
+  background-color: #fff;
+  margin: 0;
+
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.search-bar {
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.new-search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user-controls {
+  font-size: 24px;
+}
